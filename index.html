@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodHub | Delicious Food Delivered</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                Food<span>Hub</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+
+                <a href="index.html" class="active">
+                    Home
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <b class="cart-count">0</b>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        <i class="fa-solid fa-bolt"></i>
+                        Fresh. Fast. Flavorful.
+                    </p>
+
+                    <h1>
+                        Your favorite food,
+                        <span>delivered fresh.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Discover delicious meals from our menu and get
+                        them delivered straight to your doorstep.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="menu.html" class="btn btn-primary">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#popular" class="btn btn-outline">
+                            Popular Dishes
+                        </a>
+
+                    </div>
+
+
+                    <!-- Hero Statistics -->
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>50+</strong>
+                            <small>Dishes</small>
+                        </div>
+
+                        <div>
+                            <strong>4.8/5</strong>
+                            <small>Customer Rating</small>
+                        </div>
+
+                        <div>
+                            <strong>30 min</strong>
+                            <small>Avg. Delivery</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Food Illustration -->
+
+                <div class="hero-card">
+
+                    <div class="food-orb">
+
+                        <i class="fa-solid fa-burger"></i>
+
+                    </div>
+
+                    <span class="floating-tag tag-one">
+                        <i class="fa-solid fa-star"></i>
+                        4.9 Rating
+                    </span>
+
+                    <span class="floating-tag tag-two">
+                        <i class="fa-solid fa-clock"></i>
+                        25 min
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Explore
+                        </p>
+
+                        <h2>
+                            What are you craving?
+                        </h2>
+
+                    </div>
+
+                    <a href="menu.html" class="text-link">
+                        View All
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <a href="menu.html?category=Pizza"
+                        class="category-card">
+
+                        <i class="fa-solid fa-pizza-slice"></i>
+
+                        <h3>Pizza</h3>
+
+                        <p>12 items</p>
+
+                    </a>
+
+
+                    <a href="menu.html?category=Burgers"
+                        class="category-card">
+
+                        <i class="fa-solid fa-burger"></i>
+
+                        <h3>Burgers</h3>
+
+                        <p>10 items</p>
+
+                    </a>
+
+
+                    <a href="menu.html?category=Indian"
+                        class="category-card">
+
+                        <i class="fa-solid fa-bowl-food"></i>
+
+                        <h3>Indian</h3>
+
+                        <p>15 items</p>
+
+                    </a>
+
+
+                    <a href="menu.html?category=Desserts"
+                        class="category-card">
+
+                        <i class="fa-solid fa-ice-cream"></i>
+
+                        <h3>Desserts</h3>
+
+                        <p>8 items</p>
+
+                    </a>
+
+
+                    <a href="menu.html?category=Drinks"
+                        class="category-card">
+
+                        <i class="fa-solid fa-mug-hot"></i>
+
+                        <h3>Drinks</h3>
+
+                        <p>7 items</p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= POPULAR FOOD ================= -->
+
+        <section class="section soft" id="popular">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Customer Favorites
+                        </p>
+
+                        <h2>
+                            Popular Dishes
+                        </h2>
+
+                    </div>
+
+                    <a href="menu.html" class="text-link">
+                        See Full Menu
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- JavaScript will load food here -->
+
+                <div id="popular-grid" class="food-grid">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= OFFER ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="promo">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Limited Offer
+                        </p>
+
+                        <h2>
+                            Get 20% off your first order
+                        </h2>
+
+                        <p>
+                            Use code
+                            <strong>WELCOME20</strong>
+                            at checkout.
+                        </p>
+
+                    </div>
+
+                    <a href="menu.html" class="btn btn-dark">
+
+                        Order Now
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Simple Process
+                        </p>
+
+                        <h2>
+                            How FoodHub Works
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="steps">
+
+
+                    <article>
+
+                        <span>01</span>
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <h3>
+                            Choose Your Food
+                        </h3>
+
+                        <p>
+                            Browse our menu and choose
+                            your favorite dishes.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>02</span>
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        <h3>
+                            Add To Cart
+                        </h3>
+
+                        <p>
+                            Select quantities and review
+                            your complete order.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>03</span>
+
+                        <i class="fa-solid fa-motorcycle"></i>
+
+                        <h3>
+                            Get It Delivered
+                        </h3>
+
+                        <p>
+                            Complete checkout and enjoy
+                            your delicious meal.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= REVIEWS ================= -->
+
+        <section class="section soft">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Customer Reviews
+                        </p>
+
+                        <h2>
+                            What Customers Say
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="review-grid">
+
+
+                    <article class="review">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "The ordering process is simple
+                            and the food arrived hot.
+                            Loved the experience."
+                        </p>
+
+                        <strong>
+                            Rahul S.
+                        </strong>
+
+                        <small>
+                            Regular Customer
+                        </small>
+
+                    </article>
+
+
+                    <article class="review">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Great variety and the cart
+                            works smoothly. The biryani
+                            was delicious."
+                        </p>
+
+                        <strong>
+                            Priya K.
+                        </strong>
+
+                        <small>
+                            Food Lover
+                        </small>
+
+                    </article>
+
+
+                    <article class="review">
+
+                        <div class="stars">
+                            ★★★★☆
+                        </div>
+
+                        <p>
+                            "Clean design, quick checkout
+                            and plenty of choices.
+                            I will order again."
+                        </p>
+
+                        <strong>
+                            Arjun M.
+                        </strong>
+
+                        <small>
+                            Happy Customer
+                        </small>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <div>
+
+                <a href="index.html" class="logo">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                    Food<span>Hub</span>
+
+                </a>
+
+                <p>
+                    Good food, good mood.
+                    Fresh meals made for every craving.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@foodhub.example
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 FoodHub.
+            Demo project for educational use.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
