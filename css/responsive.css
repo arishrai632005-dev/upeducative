@@ -1,0 +1,357 @@
+/* =========================================================
+   FOODHUB - RESPONSIVE STYLES
+   ========================================================= */
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero-content {
+        max-width: 750px;
+    }
+
+    .hero-card {
+        min-height: 380px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        position: static;
+    }
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(94%, 1120px);
+    }
+
+    .nav {
+        min-height: 68px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px;
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-top: 0;
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 13px 12px;
+        border-radius: 9px;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        background: #fff0e8;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4.5rem);
+        letter-spacing: -2.5px;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero-card {
+        min-height: 320px;
+        border-radius: 25px;
+    }
+
+    .food-orb {
+        width: 190px;
+        height: 190px;
+        font-size: 5rem;
+    }
+
+    .tag-one {
+        top: 30px;
+        left: 15px;
+    }
+
+    .tag-two {
+        bottom: 30px;
+        right: 15px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo {
+        padding: 30px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 20px;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner {
+        padding: 55px 0;
+    }
+
+    .page-banner h1 {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+        letter-spacing: -2px;
+    }
+
+    .about-panel {
+        padding: 30px;
+    }
+
+    .about-mini-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-banner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats-banner div {
+        border-right: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .stats-banner div:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .stats-banner div:nth-last-child(-n + 2) {
+        border-bottom: 0;
+    }
+
+    .form-card,
+    .checkout-card {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 35px;
+    }
+
+    .menu-tools {
+        grid-template-columns: 1fr;
+    }
+
+    .sort-select {
+        width: 100%;
+    }
+
+    .menu-meta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cart-item {
+        grid-template-columns: 70px 1fr;
+        gap: 14px;
+    }
+
+    .cart-item-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cart-item-actions {
+        grid-column: 1 / -1;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .coupon-box {
+        flex-direction: column;
+    }
+
+    .coupon-box button {
+        min-height: 44px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 420px) {
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .floating-tag {
+        font-size: 0.75rem;
+        padding: 9px 12px;
+    }
+
+    .food-image {
+        height: 170px;
+    }
+
+    .stats-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-banner div,
+    .stats-banner div:nth-child(2n) {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .stats-banner div:last-child {
+        border-bottom: 0;
+    }
+
+    .cart-item {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .cart-item-image {
+        width: 60px;
+        height: 60px;
+    }
+}
