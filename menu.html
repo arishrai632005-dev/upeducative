@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>FoodHub | Menu</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/responsive.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            Food<span>Hub</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html" class="active">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="cart.html" class="cart-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                <b class="cart-count">0</b>
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- ================= PAGE BANNER ================= -->
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                <i class="fa-solid fa-utensils"></i>
+                Our Menu
+            </p>
+
+            <h1>Find something delicious.</h1>
+
+            <p>
+                Explore our collection of fresh and flavorful
+                dishes made for every craving.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU SECTION ================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">Food Collection</p>
+                    <h2>Browse Our Menu</h2>
+                </div>
+
+                <span id="result-count" class="result-count">
+                    0 items
+                </span>
+
+            </div>
+
+
+            <!-- ================= SEARCH & FILTER ================= -->
+
+            <div class="menu-tools">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Search food..."
+                        autocomplete="off">
+
+                </div>
+
+
+                <select id="category-filter">
+
+                    <option value="All">
+                        All Categories
+                    </option>
+
+                    <option value="Pizza">
+                        Pizza
+                    </option>
+
+                    <option value="Burgers">
+                        Burgers
+                    </option>
+
+                    <option value="Indian">
+                        Indian
+                    </option>
+
+                    <option value="Snacks">
+                        Snacks
+                    </option>
+
+                    <option value="Desserts">
+                        Desserts
+                    </option>
+
+                    <option value="Drinks">
+                        Drinks
+                    </option>
+
+                </select>
+
+
+                <select id="sort-filter">
+
+                    <option value="default">
+                        Sort: Recommended
+                    </option>
+
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Rating
+                    </option>
+
+                    <option value="name">
+                        Name A-Z
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ================= CATEGORY BUTTONS ================= -->
+
+            <div class="category-tabs" id="category-tabs">
+
+                <button
+                    class="category-tab active"
+                    data-category="All">
+
+                    All
+
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="Pizza">
+
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    Pizza
+
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="Burgers">
+
+                    <i class="fa-solid fa-burger"></i>
+                    Burgers
+
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="Indian">
+
+                    <i class="fa-solid fa-bowl-food"></i>
+                    Indian
+
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="Snacks">
+
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    Snacks
+
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="Desserts">
+
+                    <i class="fa-solid fa-ice-cream"></i>
+                    Desserts
+
+                </button>
+
+                <button
+                    class="category-tab"
+                    data-category="Drinks">
+
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Drinks
+
+                </button>
+
+            </div>
+
+
+            <!-- ================= FOOD GRID ================= -->
+
+            <div
+                id="menu-grid"
+                class="food-grid">
+
+            </div>
+
+
+            <!-- ================= NO RESULT ================= -->
+
+            <div
+                id="no-results"
+                class="empty-state hidden">
+
+                <div class="empty-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>No food found</h3>
+
+                <p>
+                    Try another food name or select a different
+                    category.
+                </p>
+
+                <button
+                    class="btn btn-primary"
+                    id="clear-filters">
+
+                    Clear Filters
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SPECIAL OFFER ================= -->
+
+    <section class="section soft">
+
+        <div class="container">
+
+            <div class="promo">
+
+                <div>
+
+                    <p class="eyebrow">
+                        First Order Offer
+                    </p>
+
+                    <h2>
+                        Save 20% on your first order
+                    </h2>
+
+                    <p>
+                        Apply
+                        <strong>WELCOME20</strong>
+                        during checkout.
+                    </p>
+
+                </div>
+
+                <a
+                    href="cart.html"
+                    class="btn btn-dark">
+
+                    View Cart
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY FOODHUB ================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Why FoodHub?
+                    </p>
+
+                    <h2>
+                        Food ordering made simple
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="steps">
+
+                <article>
+
+                    <span>01</span>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <h3>
+                        Easy Discovery
+                    </h3>
+
+                    <p>
+                        Quickly search and filter dishes
+                        according to your cravings.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>02</span>
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <h3>
+                        Simple Cart
+                    </h3>
+
+                    <p>
+                        Add dishes, change quantities and
+                        manage your order easily.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <span>03</span>
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h3>
+                        Quick Checkout
+                    </h3>
+
+                    <p>
+                        Enter your details and place your
+                        demo order in seconds.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="logo">
+
+                <i class="fa-solid fa-utensils"></i>
+                Food<span>Hub</span>
+
+            </a>
+
+            <p>
+                Good food, good mood.
+                Fresh meals made for every craving.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@foodhub.example
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 FoodHub.
+        Demo project for educational use.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+```
+
+</body>
+
+</html>
