@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>FoodHub | Contact Us</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            Food<span>Hub</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+            <a href="cart.html" class="cart-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                <b class="cart-count">0</b>
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- ================= PAGE BANNER ================= -->
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                <i class="fa-solid fa-headset"></i>
+                Get In Touch
+            </p>
+
+            <h1>
+                We're here to help.
+            </h1>
+
+            <p>
+                Have a question about your order or FoodHub?
+                Send us a message and we'll get back to you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="section">
+
+        <div class="container contact-grid">
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <p class="eyebrow">
+                    Contact Us
+                </p>
+
+                <h2>
+                    Let's talk about food.
+                </h2>
+
+                <p>
+                    Whether you have a question, suggestion or
+                    need help with an order, you can reach us
+                    through the information below.
+                </p>
+
+
+                <div class="contact-list">
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@foodhub.example</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 98765 43210</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3>Address</h3>
+                            <p>FoodHub Street, India</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <h3>Support Hours</h3>
+                            <p>10:00 AM – 10:00 PM</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="form-card">
+
+                <div class="form-heading">
+
+                    <p class="eyebrow">
+                        Send A Message
+                    </p>
+
+                    <h2>
+                        How can we help?
+                    </h2>
+
+                </div>
+
+
+                <form id="contact-form" novalidate>
+
+                    <div class="form-two">
+
+                        <div class="form-group">
+
+                            <label for="contact-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+
+                            <small
+                                class="form-error"
+                                id="name-error">
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+
+                            <small
+                                class="form-error"
+                                id="email-error">
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contact-subject">
+                            Subject
+                        </label>
+
+                        <select
+                            id="contact-subject"
+                            name="subject"
+                            required>
+
+                            <option value="">
+                                Select a subject
+                            </option>
+
+                            <option value="order">
+                                Order Help
+                            </option>
+
+                            <option value="delivery">
+                                Delivery Question
+                            </option>
+
+                            <option value="feedback">
+                                Feedback
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="form-error"
+                            id="subject-error">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="contact-message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required>
+                        </textarea>
+
+                        <small
+                            class="form-error"
+                            id="message-error">
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Send Message
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="section soft">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        FAQ
+                    </p>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <details class="faq-item">
+
+                    <summary>
+                        How can I place an order?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        Open the Menu page, select your favorite
+                        dishes, add them to your cart and continue
+                        to checkout.
+                    </p>
+
+                </details>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        Can I change the quantity of an item?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        Yes. You can increase or decrease item
+                        quantities directly from the Cart page.
+                    </p>
+
+                </details>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        Is there a discount for first orders?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        Yes. Use the coupon code
+                        <strong>WELCOME20</strong>
+                        at checkout to get 20% off.
+                    </p>
+
+                </details>
+
+
+                <details class="faq-item">
+
+                    <summary>
+                        Where is my cart information stored?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </summary>
+
+                    <p>
+                        This educational demo uses your browser's
+                        LocalStorage to keep cart information.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="promo">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Hungry?
+                    </p>
+
+                    <h2>
+                        Don't just talk about food. Order it.
+                    </h2>
+
+                    <p>
+                        Explore our menu and discover something
+                        delicious.
+                    </p>
+
+                </div>
+
+                <a
+                    href="menu.html"
+                    class="btn btn-dark">
+
+                    Explore Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="logo">
+
+                <i class="fa-solid fa-utensils"></i>
+                Food<span>Hub</span>
+
+            </a>
+
+            <p>
+                Good food, good mood.
+                Fresh meals made for every craving.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@foodhub.example
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 FoodHub.
+        Demo project for educational use.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+```
+
+</body>
+
+</html>
